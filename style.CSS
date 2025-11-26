@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Header */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.camera-icon {
+    width: 25px;
+    filter: invert(1);
+}
+
+/* Main Reel Container */
+.reel-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Reel Video */
+.reel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Side Buttons */
+.actions {
+    position: absolute;
+    right: 15px;
+    bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+
+.action-btn img {
+    width: 35px;
+    filter: invert(1);
+}
+
+.action-btn span {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Bottom Caption */
+.caption-box {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    width: 80%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.follow-btn {
+    border: none;
+    background: none;
+    color: #00aaff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.3em;
+}
+
+.caption span {
+    color: #cccccc;
+}
+
+.music-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.music-bar img {
+    width: 18px;
+    filter: invert(1);
+}
